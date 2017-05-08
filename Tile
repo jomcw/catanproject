@@ -1,0 +1,31 @@
+package catan;
+
+public class Tile{
+ 
+ 
+ private char type;
+ private boolean robber;
+ private int number;
+ 
+ public Tile(char type, int number){
+  this.type = type;
+  this.number = number;
+ }
+ 
+ public char getType(){
+  return type;
+ }
+ 
+ public void putRobberHere(){
+  robber = true;
+ }
+ 
+ public void removeRobber(){
+  robber = false;
+ }
+ 
+ public boolean isRobberHere(){
+  return robber;
+ }
+ 
+}
